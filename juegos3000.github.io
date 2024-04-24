@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+```<html>
 <head>
     <title>Mi Página de Juegos</title>
     <style>
@@ -28,4 +28,4 @@
         </div>
     </div>
 </body>
-</html>
+</html>´´´
