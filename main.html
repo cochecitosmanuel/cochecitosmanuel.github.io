@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Feliz Día de la Madre</title>
     <style>
         body {
-            background-color: #f8f8f8;
+            background-color: #f8e0e0;
             font-family: Arial, sans-serif;
+        }
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
-        h1 {
-            color: #333;
+        .message {
             font-size: 3em;
+            color: #ff0000;
+            text-shadow: 2px 2px #ff9999;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000;
+            }
+            to {
+                text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Feliz Día de la Madre</h1>
+    <div class="container">
+        <div class="message">¡Feliz Día de la Madre!</div>
+    </div>
 </body>
 </html>
