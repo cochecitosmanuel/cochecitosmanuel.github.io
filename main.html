@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Juego de Adivinación</title>
-    <script type="text/javascript">
-        var numeroSecreto = Math.floor(Math.random() * 100) + 1;
-        var intentos = 0;
-
-        function jugar() {
-            var numeroUsuario = document.getElementById('numeroUsuario').value;
-            intentos++;
-
-            if (numeroUsuario < numeroSecreto) {
-                document.getElementById('pista').innerHTML = "¡Demasiado bajo!";
-            } else if (numeroUsuario > numeroSecreto) {
-                document.getElementById('pista').innerHTML = "¡Demasiado alto!";
-            } else {
-                document.getElementById('pista').innerHTML = "¡Correcto! Lo has adivinado en " + intentos + " intentos.";
-            }
+    <title>Mi Página de Juegos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
-    </script>
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Juego de Adivinación</h1>
-    <p>Adivina un número entre 1 y 100:</p>
-    <input type="text" id="numeroUsuario">
-    <button onclick="jugar()">¡Adivina!</button>
-    <p id="pista"></p>
+    <div class="container">
+        <h1>Mis Juegos Favoritos</h1>
+        <ul>
+            <li>Super Mario</li>
+            <li>Zelda</li>
+            <li>Minecraft</li>
+            <!-- Añade aquí más juegos -->
+        </ul>
+    </div>
 </body>
 </html>
